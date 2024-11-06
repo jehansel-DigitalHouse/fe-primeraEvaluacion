@@ -1,7 +1,5 @@
-import React from "react";
-
-const Card = () => {
-	return <div>Hola, soy una tarjeta</div>;
+const Card = ({ estudiante }) => {
+	return <div>Hola, soy una tarjeta y tu eres {estudiante}</div>;
 };
 
 export default Card;
