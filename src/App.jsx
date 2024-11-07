@@ -1,10 +1,9 @@
-import "./App.css";
-
+import "./styles/App.css";
 import Form from "./components/Form";
 
 function App() {
 	return (
-		<div className="App">
+		<div>
 			<h1>¿Cuál es tu deporte favorito?</h1>
 			<Form />
 		</div>
