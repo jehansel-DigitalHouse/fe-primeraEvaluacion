@@ -6,7 +6,7 @@ function App() {
 		<div className="App">
 			<h1>Carga de estudiantes</h1>
 			<form></form>
-			<Card estudiante="Juan" />
+			<Card estudiante="Juanito" />
 		</div>
 	);
 }
