@@ -5,7 +5,7 @@ import Form from "./components/Form";
 function App() {
 	return (
 		<div className="App">
-			<h1>Deporte favorito</h1>
+			<h1>¿Cuál es tu deporte favorito?</h1>
 			<Form />
 		</div>
 	);
