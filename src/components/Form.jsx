@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Card from "./Card";
+import FormStyles from "../styles/Form.module.css";
 
 const Form = () => {
 	const [persona, setPersona] = useState({
@@ -34,7 +35,7 @@ const Form = () => {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit}>
+			<form className={FormStyles.formContainer} onSubmit={handleSubmit}>
 				<label>Nombre: </label>
 				{/* El nombre de la persona se guarda sin espacios */}
 				<input
@@ -63,9 +64,9 @@ const Form = () => {
 			{show ? (
 				<Card nombre={persona.nombre} deporte={persona.deporte} />
 			) : error ? (
-				<h4 style={{ color: "red" }}>
+				<h2 style={{ color: "red" }}>
 					Por favor chequea que la información sea correcta
-				</h4>
+				</h2>
 			) : null}
 		</div>
 	);

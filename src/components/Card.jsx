@@ -1,12 +1,14 @@
+import CardStyles from "../styles/Card.module.css";
+
 const Card = ({ nombre, deporte }) => {
 	return (
-		<>
-			<h4>Hola, {nombre}!</h4>
-			<h4>
+		<div className={CardStyles.cardContainer}>
+			<h2>Hola, {nombre}!</h2>
+			<h2>
 				Gracias por compartir que tu deporte favorito es el/la {deporte}
 				.
-			</h4>
-		</>
+			</h2>
+		</div>
 	);
 };
 
